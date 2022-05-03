@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="410dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:maxWidth="410dp"
+            android:maxHeight="110dp"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="410dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_Filters"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCopy"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="filter_copy"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_Copy"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonInvert"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="filter_invert"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_Invert"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonShadesOfGray"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="filter_shadesOfGrey"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_ShadesOfGray"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonBlackAndWhite"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="filter_blackAndWhite"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_BlackAndWhite"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBrightness"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="filter_brightness"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_Brightness"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonContrast"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="filter_contrast"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_Contrast"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_Transformation"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonVerticalFlip"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:onClick="filter_verticalFlip"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_VerticalFlip"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonHorizantalFlip"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:onClick="filter_horizontalFlip"
+            android:scrollbarStyle="outsideInset"
+            android:text="@string/button_HorizontalFlip"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bitmap_image_processing</string>
+
+    <string name="button_Copy">Copy</string>
+    <string name="button_Invert">Invert</string>
+    <string name="button_BlackAndWhite">Black and white</string>
+    <string name="button_ShadesOfGray">Shades of gray</string>
+    <string name="button_Brightness">Brightness</string>
+    <string name="button_Contrast">Contrast</string>
+    <string name="button_HorizontalFlip">Horizontal flip</string>
+    <string name="button_VerticalFlip">Vertical flip</string>
+
+    <string name="textView_Filters">Filters</string>
+    <string name="textView_Transformation">Transformation</string>
+
+</resources>
